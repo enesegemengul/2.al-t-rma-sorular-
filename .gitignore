@@ -1,24 +1,212 @@
-# Compiled class file
-*.class
+SORU 1) Bir tamsayının negatif mi, pozitif mi yoksa sıfır mı olduğunu konsola yazdıran 
+programı yazınız. 
 
-# Log file
-*.log
+int sayi = 5;
 
-# BlueJ files
-*.ctxt
+if (sayi > 0 ){
+    System.out.println("Sayı pozitiftir);
+} else if(sayi < 0) {
+    System.out.println("Sayı negatiftir);
+} else {
+     System.out.println("Sayı sıfırdır");
+}
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+SORU 2) Sıcaklık değerine göre suyun halini (katı, sıvı veya gaz) konsola yazdıran programı 
+yazınız.
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+double sicaklik = 30.0;
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+if(sicaklik <= 0); {
+   System.out.println("Su katı haldedir (buz) ");
+}  else if(sicaklik < 100)
+   System.out.println("Su sıvı haldedir");
+} else {
+System.out.println("Su gaz (buhar) halindedir");
+}
+
+SORU 3) Bir aracın ilk hız ve son hız değerine göre, konsola “Yavaşlıyor”, “Hızlanıyor” 
+veya “Sabit Hızda” yazdıran JAVA programını yazınız.
+
+double ilkHiz = 25;
+
+double sonHiz = 75;
+
+if ( sonHiz > ilkHiz) {
+    System.out.println("Araç hızlanıyor");
+} else if ( sonHiz < ilkHiz){
+     System.out.println("Araç yavaşlıyor");
+} else {
+     System.out.println("Araç sabit hızla gidiyor");
+
+SORU 4) Tanımlanan üç açı değeriyle bir üçgen oluşup oluşamayacağını konsola yazdıran 
+JAVA programını yazınız.
+
+int aci1 = 60, aci2 = 90, aci3 = 30;
+
+int toplam 0 aci1 + aci2 +aci3;
+
+if(toplam == 180 && aci1 > 0 && aci2 > 0 && aci3 > 0){
+    System.out.println("Bu açılarla üçgen oluşturabilir");
+} else { 
+     System.out.println("Bu açılarla üçgen oluşturalamaz");
+
+SORU 5) Üç tamsayı arasındaki en büyük değeri bulan ve konsola yazdıran JAVA 
+programını yazınız.  
+Örneğin; 5, 12, -3 değerleri için çıktı olarak 12 vermeli.
+
+int sayi1 = 12, sayi2 = 5, sayi3 = -3;
+
+if(sayi1 >= sayi2 && sayi1 >= sayi3){
+   System.out.println("En büyük = " + sayi1);
+} else if (sayi2 >= sayi1 && sayi2 >=  sayi3 ) {
+  System.out.println("En büyük = " + sayi2);
+} else if ( sayi3 >= sayi1 && sayi3 >=  sayi2){
+  System.out.println("En büyük =" + sayi3);
+} else { 
+    System.out.println("En büyük sayi = " + enBüyük);
+
+SORU 6) Üç tamsayı arasındaki en küçük değeri bulan ve konsola yazdıran JAVA 
+programını yazınız.  
+
+int sayi1 = 12, sayi2= 5, sayi3 = -3;
+
+if(sayi1 <= sayi2 && sayi1 <= sayi3){
+   System.out.println("En küçük sayi =" + sayi1 );
+}  else if ( sayi2 <= sayi1 && sayi2 <= sayi3) {
+    System.out.println("En küçük sayi = " + sayi2);
+} else if ( sayi3 <= sayi1 && sayi3 <= sayi2){
+    System.out.println("En küçük sayi = " sayi3){
+} else {
+    System.out.println("En küçük sayi);
+
+=7) Bir öğrencinin vize, ödev ve final notunu kullanarak dönem sonu notunu 
+hesaplayan, eğer dönem sonu notu 70 ve üzerindeyse konsola GEÇTİ, değilse KALDI 
+yazdıran programı yazınız. 
+Dönem sonu notu = 0.3*Vize + 0.2*Ödev + 0.5*Final
+double vize = 70;
+
+double final =80;
+
+double ödev = 90;
+
+double toplam =  0.3*vize + 0.2*ödev + 0.5*final;
+
+if ( toplam >= 70){
+  System.out.println("Durum : Geçti");
+} else { 
+   System.out.println("Durum : Kaldı ");
+
+SORU 8) Tanımlanan genel ağırlıklı not ortalaması (GANO) değeri için aşağıdaki aralıklara 
+göre uygun harf notunu konsola yazdıran programı yazınız. 
+ 3.5 ≤ GANO ≤ 4.0 → A 
+ 3.0 ≤ GANO < 3.5 → B 
+ 2.5 ≤ GANO < 3.0 → C 
+ 2.0 ≤ GANO < 2.5 → D 
+ 1.5 ≤ GANO < 2.0 → E 
+ 0.0 ≤ GANO < 1.5 → F
+
+double gano =3.0;
+
+if (gano >= 3.5 && gano <= 4.0) {
+   System.out.println("Harf Notu: A");
+} else if (gano >= 3.0 && gano < 3.5) {
+   System.out.println("Harf Notu: B");
+} else if (gano >= 2.5 && gano < 3.0) {
+   System.out.println("Harf Notu: C");
+} else if (gano >= 2.0 && gano < 2.5) {
+   System.out.println("Harf Notu: D");
+} else if (gano >= 1.5 && gano < 2.0) {
+   System.out.println("Harf Notu: E");
+} else if (gano >= 0.0 && gano < 1.5) {
+    System.out.println("Harf Notu: F");
+ } else {
+System.out.println("Geçersiz GANO değeri girdiniz!);
+}
+
+SORU 9) A, B, C, D ve E harf notlarından birinin verildiği bir sistemde, öğrencinin harf 
+notuna göre konsola, 
+ A için “Çok iyi” 
+ B için “İyi” 
+ C için “Orta” 
+ D için “Kötü” 
+ E için “Çok kötü” 
+yazdıran programı yazınız.
+
+char not = 'B';
+ if (not == 'A') {
+System.out.println("Çok iyi");
+} else if (not == 'B') {
+ System.out.println("İyi");
+} else if (not == 'C') {
+ System.out.println("Orta");
+} else if (not == 'D') {
+ System.out.println("Kötü");
+} else if (not == 'E') {
+System.out.println("Çok kötü");
+} else {
+System.out.println("Geçersiz harf notu girdiniz!");
+}
+
+SORU 10) Bir ürünün eski fiyatı ve yeni fiyatına göre, konsola “Bu ürüne %X zam 
+gelmiştir” veya “Bu ürüne %X indirim yapılmıştır” ya da “Bu ürünün fiyatı değişmemiştir” 
+yazdıran JAVA programını yazınız.
+
+double eskiFiyat = 40;
+
+double yeniFiyat = 80;
+
+double zamOrani = ((yeniFiyat - eskiFiyat) / eskiFiyat) * 100;
+
+ double indirimOrani = ((eskiFiyat - yeniFiyat) / eskiFiyat) * 100;
+
+ if (yeniFiyat > eskiFiyat) {
+ System.out.printf("Bu ürüne  zam gelmiştir.", zamOrani);
+ } else if (yeniFiyat < eskiFiyat) {
+ System.out.printf("Bu ürüne  indirim yapılmıştır.", indirimOrani);
+ } else {
+System.out.println("Bu ürünün fiyatı değişmemiştir.");
+
+SORU 11) Switch-case yapısını kullanarak; 0’dan 9’a kadar tanımlanan bir rakamı yazıyla 
+konsola yazdıran, eğer bu aralık dışındaysa konsola "Bu bir rakam değildir" şeklinde uyarı 
+mesajı yazan programı yazınız. 
+Örneğin; 
+6 için ALTI mesajı konsola yazdırılmalıdır. 
+ int = 5;
+
+ switch (rakam) {
+ case 0:System.out.println("SIFIR");break;
+ case 1:System.out.println("BİR");break;
+ case 2:System.out.println("İKİ");break;          
+ case 3:System.out.println("ÜÇ");break;            
+ case 4:System.out.println("DÖRT");break;           
+ case 5:System.out.println("BEŞ");break;
+ case 6:System.out.println("ALTI");break;
+ case 7:System.out.println("YEDİ");break;
+ case 8:System.out.println("SEKİZ");break;
+ case 9:System.out.println("DOKUZ");break;
+ default:System.out.println("Bu bir rakam değildir!");
+   }
+
+SORU 12) İki basamaklı iki tamsayının, birler basamağındaki rakamların büyüğünü konsola 
+yazdıran JAVA programını yazınız.
+
+int sayi1 = 63, sayi2 = 65;
+
+int birler1 = sayi1 % 10;
+
+int birler2 = sayi2 % 10;
+
+if (birler1 > birler2) {
+System.out.println("Birinci sayının birler basamağı daha büyük: " + birler1);
+} else if (birler2 > birler1) {
+System.out.println("İkinci sayının birler basamağı daha büyük: " + birler2);
+} else {
+System.out.println("Her iki sayının birler basamağı eşit: " + birler1);
+}
+
+SORU 13) Zam dönemindeki bir firmada 0-5 yıl arası çalışanlara %20, 6-10 yıl arası 
+çalışanlara %25, 11 ve üzeri yıl çalışanlara ise %30 zam yapılacaktır. Buna göre bir çalışanın 
+mevcut maaşı ve çalışma yılına göre alacağı yeni maaşı hesaplayan ve konsola yazdıran 
+programı yazınız.
+
+
