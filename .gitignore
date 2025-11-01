@@ -209,4 +209,175 @@ SORU 13) Zam dönemindeki bir firmada 0-5 yıl arası çalışanlara %20, 6-10 y
 mevcut maaşı ve çalışma yılına göre alacağı yeni maaşı hesaplayan ve konsola yazdıran 
 programı yazınız.
 
+double maas =10.000;
+
+int yil = 7;
+
+if(yil <= 5) 
+
+double yeniMaas =maas*1.20;
+
+System.out.println("0 ve 5 yıl arasında çalışanlara %20 zam yap");
+
+if(yil<=10)
+
+double yeniMaas = maas*1.30;
+
+System.out.println("0 ve 10 yıl arasında çalışanlara %25 zam yap");
+
+else 
+
+double yeniMaas = maas*1.30;
+
+System.out.println("yeni maas:" + yeniMaas);
+
+SORU 14) Bir şirket sadece aşağıdaki durumlarda çalışanlarını sigortalamaktadır. 
+ Çalışan evli ise 
+ Çalışan evli değilse, erkek ve 30 yaşın üzerindeyse 
+ Çalışan evli değilse, kadın ve 25 yaşın üzerindeyse 
+Buna göre, bir çalışanın medeni hali, cinsiyeti ve yaşına göre sigortalı olup olmayacağını 
+kontrol eden programı yazınız. 
+
+boolean evli = false;
+
+String cinsiyet ="erkek";
+
+int yas = 35;
+
+boolean sigorta =false;
+
+if(evli)
+
+System.out.println(sigorta = true);
+
+else if(evli && cinsiyet ("erkek") && yas > 30)
+
+System.out.println(sigorta = true);
+
+else if (evli && cinsiyet ("kadin) && yas >25)
+
+System.out.println(sigorta = true);
+
+else 
+
+System.out.println("Sigortali mi ." + sigorta);
+
+SORU 15)Okulun kütüphanesinden alınan bir kitap zamanında teslim edilmezse gecikme 
+gün sayısına göre öğrenciye ceza kesilmektedir. Gecikme süresi 1 haftaya kadar olursa 
+günlük 10 TL, 3 haftaya kadar olursa 100 TL ile birlikte günlük 15 TL, 3 haftadan daha uzun 
+olursa da 300 TL ile birlikte günlük 20 TL öğrenciye ceza kesilmektedir. Kütüphaneden 
+aldığı kitabı zamanında teslim etmeyen bir öğrencinin, gecikme süresine göre ödemesi 
+gereken toplam ceza tutarını hesaplayan programı yazınız.
+
+int gun = 20;
+
+if(gun <=7)
+
+int ceza =gun*10;
+
+System.out.println("Ceza");
+
+else if (gun<=21)
+
+int ceza 100+ gun*15;
+
+System.out.println("Ceza");
+
+else
+
+int ceza = 300 + gun *20;
+
+System.out.println("Toplam ceza :" + ceza + "TL");
+
+SORU 16) Tanımlanan üç kenar uzunluğu ile bir üçgen oluşup oluşamayacağını kontrol 
+ederek sonucu konsola yazdıran programı yazınız. (Üçgen oluşabilmesi için herhangi iki 
+kenarın toplamı diğer kenardan büyük olmalıdır.)   
+Örneğin; 4, 12, 5 kenar uzunluklarıyla bir üçgen oluşamaz çünkü (4+5) ≥ 12 şartı sağlanmadı. 
+6, 3, 4 kenar uzunluklarıyla bir üçgen oluşur. (6+3) ≥ 4, (6+4) ≥ 3, (3+4) ≥ 6 şartları sağlandı.
+
+int kenar1 = 6,kenar2 = 3,kenar3 =4;
+
+if(kenar1 + kenar2 > kenar3 && keanr1 + kenar 3>kenar2 && kenar2 + kenar3 >kenar1)
+
+System.out.println("Ucgen olusur");
+
+else
+
+System.out.println("Ucgen oluşmaz");
+
+SORU 17) Tanımlanan üç tamsayı değerini kendi aralarında karşılaştırarak küçükten büyüğe 
+olacak şekilde konsola yazdıran programı yazınız. 
+Örneğin; 5, 8, 3 sayıları için konsola 3, 5, 8 yazdırılmalıdır.
+
+int a1 = 5, a2 = 8, a3 = 3;
+
+if( a3<a1<a2 )
+System.out.println("enKucuk sayıyı yaz");
+else (a2>a1>a3)
+System.out.println("enBuyuk sayıyı yaz");
+
+SORU 18) Tanımlanan üç tamsayı değerinin artan sırada mı, azalan sırada mı yoksa sırasız 
+mı olduğunu kontrol eden programı yazınız. 
+Örneğin; 7, 4, 2 için konsola AZALAN -3, 0, 5 için konsola ARTAN 
+4, 7, 2 için konsola SIRASIZ yazdırılmalı.  
+
+int n1 =7,n2 = 4, n3 = 2;
+
+if(n1>n2 && n2>n3)
+
+System.out.println("AZALAN");
+
+else if (n1<n2 &&  n2<n3)
+
+System.out.println("ARTAN");
+
+else
+
+System.out.println("SIRASIZ");
+
+SORU 19) Market rafındaki iki farklı firmaya ait bitter çikolatanın gramaj ve fiyat bilgilerine 
+göre fiyat-performans olarak hangi ürünü almanın daha avantajlı olduğunu konsola yazdıran 
+programı yazınız. 
+Örneğin, birinci ürün 40 gram ve 80 TL, ikinci ürün 60 gram ve 90 TL ise konsola “İkinci 
+ürün daha avantajlı” yazmalı. 
+
+ double gram1 = 40, fiyat1 = 80, gram2 = 60, fiyat2 = 90;
+
+ double oran1 = fiyat1 / gram1;
+
+ double oran2 = fiyat2 / gram2;
+
+if (oran1 < oran2)
+
+    System.out.println("Birinci urun daha avantajli");
+
+ else if (oran2 < oran1)
+
+    System.out.println("Ikinci urun daha avantajli");
+
+ else
+
+    System.out.println("Esit avantajli")
+
+SORU 20) Tamsayı olarak tanımlanan iki değer ve karakter tipinde tanımlanan operatöre (+, 
+, 
+*, / veya %) göre, bu iki sayı üzerinde işlem yapan ve sonucu ekrana yazdıran programı 
+yazınız. 
+
+ int s = 8, t = 3;
+ char op = '/';
+ switch (op) {
+    case '+': System.out.println(s + t); break;
+    case '-': System.out.println(s - t); break;
+    case '*': System.out.println(s * t); break;
+    case '/': System.out.println((double)s / t); break;
+    case '%': System.out.println(s % t); break;
+    default: System.out.println("Gecersiz operator");
+
+
+
+
+
+
+
 
